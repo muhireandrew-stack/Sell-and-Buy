@@ -1,0 +1,933 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    margin: 50px;
+    font-size: 25px;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+    position: fixed; /* Makes the navbar fixed */
+    top: 0;          /* Positions it at the top */
+    width: 1500px;
+    height: 150px;
+    margin-bottom: 200px;
+    margin-top: 0;
+    padding: 0 20px;
+    background-color: #ffffff; /* Background color */
+    color: white;    /* Text color */
+    z-index: 1000;   /* Ensures it stays on top of other elements */
+}
+
+
+nav img{
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+}
+
+
+
+.links a {
+
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.logo img{
+    width: 200px;
+    height: 100px;
+}
+
+.menu-toggle{
+    display: none;
+}
+.menu-icon{
+    cursor: pointer;
+    display: none;
+    float: left;
+}
+
+
+@media(max-width:768px){
+
+    
+   
+ 
+    .links{
+        background-color: black;
+        display: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .toggle{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+
+    .links a{
+     display: block;
+     margin: 10px 0;
+     color: #fff;
+    }
+
+    
+
+    .menu-toggle:checked ~.links{
+        display: block;
+          margin-left: 150px;
+          margin-right: 20px;
+          
+    }
+
+
+}
+
+
+
+.cta button{
+    background-color: #6c63ff;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 25px 40px;
+    border-radius: 28px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.cta button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+.hero {
+    margin-top: 100px;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.email-signup {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.email-signup input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.email-signup button {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.email-signup button:hover{
+    background-color: black;
+}
+
+.hef{
+    display: flex;
+    flex-direction: row;
+}
+
+.strategy{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.strategy img{
+    width: 370px;
+    height: 600px;
+}
+
+.role {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+.role img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.role h2 {
+    color: #000000;
+    font-size: 25px;
+}
+
+.role p {
+    color: #000000;
+    font-size: 25px;
+}
+
+button {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.containere{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px
+
+}
+
+.containere img{
+    width: 50%;
+    height: 500px;
+
+}
+
+.role img{
+    width: 500px;
+    height: 300px;
+}
+
+
+.containere {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px rgb(95, 95, 95);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.strategy h2 {
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+   margin-left: 20px;
+}
+
+.strotegy p {
+    color: #000000;
+    margin-left: 50px;
+}
+
+.strotegy h2{
+    text-align: center;
+}
+
+.bevery{
+    display: flex;
+    flex-direction: row;
+}
+
+.jed p{
+    color: rgb(16, 78, 247);
+    cursor: pointer;
+}
+
+.jed a{
+    text-decoration: none;
+}
+.strotegy{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.theb{
+    text-align: center;
+}
+
+.drf p{
+    color: #1f1f1f;
+}
+
+
+.contamero{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+
+.contanero h2{
+    font-size: 40px;
+}
+
+.contanero h3{
+    font-size: 35px;
+}
+
+.contamero img{
+    margin-top: 20px;
+    width: 700px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.contamero{
+    display: flex;
+    flex-direction: row;
+}
+ 
+.btne button{
+    background-color: #34e952;
+    color: #000;
+    padding: 10px 16px;
+}
+
+.btne button:hover{
+    background-color: #000000;
+    color: #fff;
+}
+
+.photo{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-right: 30px;
+}
+
+
+.contaner {
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px ;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content h1 {
+    color: #ffffff;
+}
+
+.content p {
+    color: #ffffff;
+    margin: 10px 0;
+
+}
+
+.content button{
+    background-color: #008cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.content button:hover {
+    background-color: #2cd11d;
+}
+
+.icons img {
+    width: 400px;
+    height: 200px;
+}
+
+
+.box{
+    display: flex;
+    flex-direction: row;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h2, .footer-section h3 {
+    color: #000000;
+}
+
+.footer-section p, .footer-section ul {
+    color: #000000;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section i{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+
+.footer-section1 {
+    width: 30%;
+}
+
+.footer-section1 h2, .footer-section1 h3 {
+    color: #000000;
+}
+
+.footer-section1 p, .footer-section1 ul {
+    color: #000000;
+}
+
+.footer-section1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section1 ul li {
+    margin: 10px 0;
+}
+
+.footer-section1 ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-section1 ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section1 i{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.footer-section1 i:hover{
+    background-color: palevioletred;
+}
+
+.app-badges button{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-badges p{
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.app-badges i{
+    font-size: 70px;
+}
+
+.secand button{
+    background-color: #000000;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+.fist button{
+    background-color: #000000;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.app-badges button:hover{
+    background-color: #34e952;
+    color: #000000;
+
+}
+
+.app-badges button:hover p{
+    color: #000000;
+}
+
+
+
+hr{
+    width: 1050px;
+    height: 1px;
+    background-color: #000000;
+}
+
+.footerbottom{
+    text-align: center;
+}
+
+
+
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
+
+
+.account button{
+    background-color: #6c63ff;
+    padding: 30px 100px;
+    border-radius: 50px;
+}
+
+.account{
+    text-align: center;
+}
+
+.account button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.fad{
+    color: #3a3a3a;
+}
+
+.fed{
+    color: #000;
+}
+
+.tade{
+    border-radius: 30px;
+    padding: 20px 30px;
+    font-size: 20px;
+    
+}
+
+.ges{
+    display: flex;
+    flex-direction: row;
+}
+
+.gus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.head{
+    text-align: center;
+}
+
+
+.sellers-page{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+.sellers-page img{
+    width: 295px;
+    height: 250px;
+    
+}
+
+.unis{
+    display: flex;
+    flex-direction: column;
+}
+.seller{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.sell{
+    background-color: #2cd11d;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.sell img{
+    width: 400px;
+    height: 300px;
+}
+
+.sel{
+    background-color: #8f8f8f;
+    
+}
+
+.tred{
+    margin-top: 50px;
+}
+.sel button{
+    color: #000;
+    background-color: #25deeb;
+    padding: 20px 50px;
+}
+
+.has h1{
+    text-align: center;
+    align-items: center;
+    font-size: 70px;
+    color: #1064ff;
+  text-underline-position: below;
+
+}
+
+.sel button:hover{
+    background-color: #000;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.plan-page{
+    display: flex;
+    flex-direction: row;
+}
+
+.plan{
+    background-color: #d3d2d2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-bottom: 30px;
+}
+
+.plan hr{
+    width: 400px;
+    margin-right: 80px;
+    color: #999999;
+}
+
+.live a i{
+   margin-left: 20px;
+    margin-top: 20px;
+    font-size: 100px;
+}
+
+.fen i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.pal{
+    color: #8f8f8f;
+}
+
+.plan h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+.plan h4{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.plan p{
+    margin-left: 30px;
+}
+
+.plane{
+    display: flex;
+    flex-direction: row;
+}
+
+.plan button{
+    color: #000;
+    background: white;
+    border: 2px black;
+    padding: 20px 100px;
+    font-size: 25px;
+    border-radius: 50px;
+    margin-left: 50px;
+}
+
+.teddy button{
+    color: #000;
+    background: rgb(194, 144, 214);
+    border: 10px black; /*make the border black*/
+    border-radius: 50px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+
+.plan button:hover{
+    background: rgb(212, 156, 235);
+}
+
+
+.ves{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.ves h1{
+    font-size: 50px;
+}
+
+
+
+select{
+
+    padding: 20px 30px;
+    background-color: yellow;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+
+option{
+    padding: 20px 30px;
+}
+
+.purchase{
+    background-color: #25deeb;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+
+.log h3{
+   text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
