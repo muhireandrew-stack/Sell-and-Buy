@@ -803,7 +803,7 @@ form{
 .plan-page{
     display: flex;
     flex-direction: row;
-    padding:30px;
+    width:30px;
 }
 
 .plan{
